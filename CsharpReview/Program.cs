@@ -9,13 +9,19 @@ namespace CsharpReview
 
     class Circle
     {
-        static float _PI = 3.141F;
+        static float _PI;
         int _Radius;
 
+        static Circle()
+        {
+            Console.WriteLine("Static Constructor Called");
+            Circle._PI = 3.141F;
+        }
 
 
         public Circle(int Radius)
         {
+            Console.WriteLine("Instance Constructor Called");
             this._Radius = Radius;
         }
 

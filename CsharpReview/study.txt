@@ -1,0 +1,5 @@
+﻿1. virtual = parent method to override
+2. override = 
+
+3. abstract cannot be instantiated = 
+4. 
