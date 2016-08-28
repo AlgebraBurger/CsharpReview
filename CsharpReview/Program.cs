@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace CsharpReview
 {
+    
 
     class Circle
     {
@@ -33,6 +34,7 @@ namespace CsharpReview
         }
 
     }
+    public delegate string HelloFunctionDelegate(string Message);
     class Program
     {
         static void Main(string[] args)
@@ -45,8 +47,16 @@ namespace CsharpReview
             float Area2 = C2.CalculateArea();
             Console.WriteLine("Are = {0}", Area2);
 
+            HelloFunctionDelegate d = new HelloFunctionDelegate(Hello);
+            d("Hello World");
+
             Console.ReadLine();
 
+        }
+
+        public static string Hello(string strMessage)
+        {
+            return strMessage;
         }
     }
 }

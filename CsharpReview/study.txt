@@ -2,4 +2,5 @@
 2. override = 
 
 3. abstract cannot be instantiated = 
-4. 
+4. seal keyword - to protect a class from being inherited
+5. 
